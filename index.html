@@ -62,13 +62,15 @@
 						<br />
 						для вашего бизнеса
 					</h1>
-					<button type="button" class="button">Заказать услугу</button>
+					<button type="button" class="button" data-modal-open>Заказать услугу</button>
 				</section>
 			</div>
 
 			<!-- Модалка -->
-			<div class="backdrop is-hidden">
-				<div class="modal"></div>
+			<div class="backdrop is-hidden" data-modal>
+				<div class="modal">
+					<button data-modal-close>Close</button>
+				</div>
 			</div>
 
 			<!-- Особенности -->
