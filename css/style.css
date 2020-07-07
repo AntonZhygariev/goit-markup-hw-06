@@ -693,7 +693,7 @@ img {
 .backdrop.is-hidden {
 	opacity: 0;
 	pointer-events: none;
-	visibility: hidden;
+	/* visibility: hidden; */
 }
 
 .modal {
@@ -705,4 +705,8 @@ img {
 	background-color: var(--white-color);
 	top: 50%;
 	left: 50%;
+}
+
+.modal-icon {
+	fill: black;
 }
