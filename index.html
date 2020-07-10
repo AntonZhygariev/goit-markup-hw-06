@@ -75,27 +75,33 @@
 						</svg>
 					</div>
 
-					<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+					<h2>Оставьте свои данные, мы вам перезвоним</h2>
 
 					<section class="inputs">
-						<form action="/signup" method="post" class="js-form">
-							<label>
-								<input type="text" name="first_name" class="input-title" />
-								Имя
-							</label>
+						<form class="form js-form">
+							<div class="field-form">
+								<input class="input-form" type="text" name="first_name" placeholder=" " id="name" />
+								<label class="label-form" for="name">Имя</label>
+							</div>
 
-							<label>
-								<input type="tel" name="phone" class="input-block" />
-								Телефон
-							</label>
+							<div class="field-form">
+								<input class="input-form" type="tel" name="phone" id="phone" />
+								<label class="label-form" for="phone">Телефон</label>
+							</div>
 
-							<label>
-								<input type="email" name="email" class="input-block" />
-								Почта
-							</label>
-							<textarea name="comment" rows="5" placeholder="Комментарий" class="input-block"></textarea>
+							<div class="field-form">
+								<input class="input-form" type="email" name="email" id="email" />
+								<label class="label-form" for="email">Почта</label>
+							</div>
 
-							<label>
+							<textarea
+								name="comment"
+								rows="5"
+								placeholder="Комментарий"
+								class="field-form input-form comment"
+							></textarea>
+
+							<label class="checkbox">
 								<input type="checkbox" value="terms" />
 								Соглашаюсь с рассылкой и принимаю
 								<a href="/terms">Условия договора</a>

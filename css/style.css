@@ -546,7 +546,6 @@ img {
 	width: 370px;
 	margin: 15px;
 	border: 1px solid #eeeeee;
-	box-sizing: border-box;
 
 	position: relative;
 	top: 0;
@@ -730,9 +729,15 @@ img {
 	background-color: var(--white-color);
 	top: 50%;
 	left: 50%;
+
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
 }
 
 .close-bt {
+	position: absolute;
+	top: 8px;
+	right: 8px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -740,9 +745,6 @@ img {
 	height: 30px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
-	margin-right: 8px;
-	margin-top: 8px;
-	margin-left: auto;
 }
 
 .modal-icon-close {
@@ -754,10 +756,19 @@ img {
 	fill: var(--accent-color);
 }
 
-.modal-title {
+.form {
+	width: 100%;
+}
+.field-form {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+.modal > h2 {
 	margin-top: 40px;
 	margin-right: 40px;
 	margin-left: 40px;
+	margin-bottom: 0;
 
 	font-family: Roboto;
 	font-style: normal;
@@ -777,12 +788,38 @@ img {
 
 .comment {
 	resize: vertical;
+	padding-top: 12px;
+	padding-right: 16px;
+	padding-bottom: 12px;
+	padding-left: 16px;
 }
 
-.input-text + .input-text {
+.field-form + .field-form {
 	margin-top: 28px;
 }
 
-.input-title {
+.checkbox {
+	margin-bottom: 30px;
+}
+
+.input-form {
 	width: 100%;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
+
+.label-form {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.input-form:focus + .label-form {
+	position: absolute;
+	background-color: yellow;
 }
