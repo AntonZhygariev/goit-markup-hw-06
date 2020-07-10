@@ -587,8 +587,8 @@ img {
 
 .connect,
 .subscribe {
-	display: flex;
-	flex-wrap: wrap;
+	/* display: flex;
+	flex-wrap: wrap; */
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 1.14;
@@ -668,6 +668,31 @@ img {
 	margin-right: auto;
 }
 
+.subscribe-form {
+	display: flex;
+	align-items: baseline;
+}
+.footer-subscribe {
+	width: 360px;
+	height: 50px;
+	margin-right: 12px;
+	padding-left: 16px;
+
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	background-color: inherit;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.03em;
+
+	color: var(--footer-adress-color);
+}
+
 .develop-container {
 	display: block;
 	text-align: center;
@@ -707,6 +732,57 @@ img {
 	left: 50%;
 }
 
-.modal-icon {
+.close-bt {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	margin-right: 8px;
+	margin-top: 8px;
+	margin-left: auto;
+}
+
+.modal-icon-close {
 	fill: black;
+}
+
+.modal-icon-close:hover,
+.modal-icon-close:focus {
+	fill: var(--accent-color);
+}
+
+.modal-title {
+	margin-top: 40px;
+	margin-right: 40px;
+	margin-left: 40px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--title-text-color);
+}
+
+.inputs {
+	margin-top: 30px;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+.comment {
+	resize: vertical;
+}
+
+.input-text + .input-text {
+	margin-top: 28px;
+}
+
+.input-title {
+	width: 100%;
 }

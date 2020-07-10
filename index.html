@@ -69,10 +69,41 @@
 			<!-- Модалка -->
 			<div class="backdrop is-hidden" data-modal>
 				<div class="modal">
-					<svg class="icon modal-icon" width="100px" height="20px">
-						<use href="./images/sprite.svg#icon-checkbox"></use>
-					</svg>
-					<button data-modal-close>Close</button>
+					<div class="close-bt" data-modal-close>
+						<svg class="icon modal-icon-close" width="11px" height="11px">
+							<use href="./images/sprite.svg#icon-cross"></use>
+						</svg>
+					</div>
+
+					<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+					<section class="inputs">
+						<form action="/signup" method="post" class="js-form">
+							<label>
+								<input type="text" name="first_name" class="input-title" />
+								Имя
+							</label>
+
+							<label>
+								<input type="tel" name="phone" class="input-block" />
+								Телефон
+							</label>
+
+							<label>
+								<input type="email" name="email" class="input-block" />
+								Почта
+							</label>
+							<textarea name="comment" rows="5" placeholder="Комментарий" class="input-block"></textarea>
+
+							<label>
+								<input type="checkbox" value="terms" />
+								Соглашаюсь с рассылкой и принимаю
+								<a href="/terms">Условия договора</a>
+							</label>
+
+							<button>Sign up</button>
+						</form>
+					</section>
 				</div>
 			</div>
 
@@ -382,13 +413,17 @@
 					</div>
 					<div class="subscribe">
 						<b>Подпишитесь на рассылку</b>
-						<button type="button" class="button">
-							Подписаться
-							<svg class="icon" width="24px" height="24px">
-								<use href="./images/sprite.svg#icon-send"></use>
-							</svg>
-						</button>
-						<!-- <img src="./images/send.svg" alt="самолетик" /> -->
+						<form method="post" class="subscribe-form">
+							<label>
+								<input type="email" name="footer-email" class="footer-subscribe" placeholder="E-mail" />
+							</label>
+							<button type="submit" class="button">
+								Подписаться
+								<svg class="icon" width="24px" height="24px">
+									<use href="./images/sprite.svg#icon-send"></use>
+								</svg>
+							</button>
+						</form>
 					</div>
 				</div>
 				<div class="container develop-container">
