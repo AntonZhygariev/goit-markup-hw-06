@@ -110,21 +110,27 @@
 							</div>
 
 							<textarea
+								class="field-form input-form comment"
 								name="comment"
 								rows="5"
 								placeholder="Комментарий"
-								class="field-form input-form comment"
 							></textarea>
+						</section>
 
-							<label class="checkbox">
-								<input type="checkbox" value="terms" />
-								Соглашаюсь с рассылкой и принимаю
-								<a href="/terms">Условия договора</a>
-							</label>
+							<div class="checkbox-container">
+								<label class="checkbox">
+									<input class="checkbox-input" type="checkbox" value="terms" name="checkbox" />
+									<span class="checkbox-label">
+										Соглашаюсь с рассылкой и принимаю
+										<a href="/terms">Условия договора</a>
+									</span>
+								</label>
+							</div>
 
-							<button>Sign up</button>
+							<div class="modal-button">
+								<button type="submit" class="button">Отправить</button>
+							</div>
 						</form>
-					</section>
 				</div>
 			</div>
 
