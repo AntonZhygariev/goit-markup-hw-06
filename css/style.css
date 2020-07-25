@@ -923,15 +923,6 @@ img {
 	margin-right: 9px;
 	/* flex-shrink: 0; */
 }
-/* 
-.checkbox-input:checked ~ .checkbox-label::before {
-	background-color: var(--accent-color);
-	border-color: transparent;
-	background-image: url(../images/checkbox.svg);
-	background-size: 12px;
-	background-repeat: no-repeat;
-	background-position: center;
-} */
 
 .checkbox-input:checked ~ .checkbox-label::before,
 .checkbox-input:checked ~ .icon-checkbox {
